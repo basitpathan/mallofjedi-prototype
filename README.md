@@ -1,4 +1,4 @@
-# moj Prototype
+# Mall of Jedi Prototype
 
 Read the [GOV.UK Prototyping Kit](https://github.com/alphagov/govuk_prototype_kit).
 
@@ -49,38 +49,6 @@ To avoid conflicts we recommend using ports between 3000 and 3009. To change the
 Any code changes should update in the browser without you restarting the app.
 
 The app recompiles app/assets/stylesheets/application.scss everytime changes are observed.
-
-
-## Heroku Deployment
-
-#### Setup Remote - one time activity
-
-Open a command line app (Terminal on OSX) and navigate to repo dir. Then run:
-
-```
-git remote add heroku git@heroku.com:moj-prototype.git
-```
-
-Check heroku remote is set:
-
-```
-git remote -v
-```
-shows heroku remote set
-```
-heroku	git@heroku.com:moj-prototype.git (fetch)
-heroku	git@heroku.com:moj-prototype.git (push)
-```
-
-#### Deploy changes to Heroku
-
-Make sure you push from up to date master branch:
-
-```
-git push heroku master
-```
-
-Go to [https://moj-prototype.herokuapp.com](https://moj-prototype.herokuapp.com) in your browser.
 
 ## Documentation
 
