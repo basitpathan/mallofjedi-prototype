@@ -1,0 +1,54 @@
+{{<layout}}
+
+{{$pageTitle}}
+	MOJ - About You - 2
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+  <form action="/about-you-continue" method="post" class="form">
+    <div class = "form-group-compound">   
+      <a id="back" class="link-back" href="javascript:history.back()">Back</a>
+    </div>
+    <h2 class="form-title heading-large">About you - continued</h2>
+    <fieldset>
+      <div class="form-group">
+          <label class="form-label" for="telephone-number">Contact telephone number</label>
+          <input class="form-control" id="telephone-number" name="phone" type="number">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Delivery date</label>      
+        <label class="form-hint">For example, 24 4 1998</label>
+        <div class="form-date">
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input type="number" maxlength="2" class="form-control" id="dob-day" max="31" min="1" name="dobDay">
+          </div>
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input type="number" maxlength="2" class="form-control" id="dob-month" max="12" min="1" name="dobMonth">
+          </div>
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input type="number" maxlength="4" class="form-control" id="dob-year" min="1900" step="1" name="dobYear">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="nino">
+          Credit card number
+          <span class="form-hint">It is the 16 digit on your card.</span>
+        </label>
+        <input class="form-control" id="nino" type="text" name="nino">
+      </div>
+    </fieldset>
+    <div class="form-group">
+        <button class ="btn button" type "next">Next</button>
+    </div>
+  </form>
+</main>
+
+{{/content}}
+
+{{/layout}}

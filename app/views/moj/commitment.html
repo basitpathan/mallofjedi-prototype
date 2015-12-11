@@ -1,0 +1,30 @@
+{{<layout}}
+
+{{$pageTitle}}
+	MOJ - Commitment
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+  <form action="/commitment" method="post" class="form">
+    <div class = "form-group-compound">   
+      <a id="back" class="link-back" href="javascript:history.back()">Back</a>
+    </div>
+    <h2 class="form-title heading-large">Your commitment</h2>
+    <div class="form-group">
+      <p class="lede">I understand that I am expected to make a full payment and I intend to do so.</p>
+      <p class="lede">I acknowledge that consequences may ensue if my details is later found to be false.</p>
+      <label class="block-label" for="commitment">
+        <input id="commitment" name="commitment" type="checkBox"> I agree to the above
+      </label>
+    </div>
+    <div class="form-group">
+      <button class ="btn button" type "next">Next</button>
+    </div>
+  </form>
+</main>
+
+{{/content}}
+
+{{/layout}}

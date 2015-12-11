@@ -1,0 +1,56 @@
+{{<layout}}
+
+{{$pageTitle}}
+	MOJ - About You
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+  <form action="/about-you" method="post" class="form">
+  	<div class = "form-group-compound">   
+    	<a id="back" class="link-back" href="javascript:history.back()">Back</a>
+  	</div>
+    <h2 class="form-title heading-large">About you</h2>
+    <fieldset class="inline">
+		<legend class="font-medium">Full name</legend>
+	    <span class="form-hint">Including any middle names</span>
+	    <div class="form-group">
+	    	<input class="form-control" id="fullname" name="fullname" type="text"/>
+		</div>
+	</fieldset>
+    <fieldset class="inline">
+		<legend class="font-medium">Enter address</legend>
+	    <div class="form-group">
+	        <span class="form-hint">This should be current address</span>
+	    	<label class="form-label" for="address-1">Address Line 1</label>
+	    	<input class="form-control" id="address-1" name="address1" type="text"/>
+		</div>
+		<div class="form-group">
+	    	<label class="form-label" for="address-2">Address Line 2</label>
+	    	<input class="form-control" id="address-1" name="address2" type="text"/>
+	    </div>
+	    <div class="form-group">
+	    	<label class="form-label" for="address-3">Address Line 3 (optional)</label>
+	    	<input class="form-control" id="address-1" name="address3" type="text"/>
+	    </div>
+	    <div class="form-group">	
+	    	<label class="form-label" for="address-4">Address Line 4 (optional)</label>
+	    	<input class="form-control" id="address-1" name="address4" type="text"/>
+	    </div>
+	    <div class="form-group">	
+	        <label class="form-label" for="postcode">Postcode</label>
+	        <div class ="grid-row column-two-thirds inline">
+	        	<input class="form-control" type="text" id="postcode" name="postcode" value=""/>
+	        </div>
+	    </div>
+	</fieldset>
+	<div class = "form-group">   
+      <button class ="btn button" type="next">Next</button>
+    </div>
+  </form>
+</main>
+
+{{/content}}
+
+{{/layout}}

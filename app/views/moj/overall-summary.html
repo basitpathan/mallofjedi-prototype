@@ -1,0 +1,85 @@
+{{<layout}}
+
+{{$pageTitle}}
+	MOJ - Check your order
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+  <form action="/overall-summary" method="post" class="form">
+    <div class = "form-group-compound">   
+      <a id="back" class="link-back" href="javascript:history.back()">Back</a>
+    </div>
+    <h2 class="form-title heading-large">Check your order</h2>
+    <div class="form-group">
+      <table>
+        <tbody>
+          <tr>
+              <th>Key</th>
+              <th>Value</th>
+              <th/>
+          </tr>
+          <tr>
+              <td>Membership type</td>
+              <td>{{campaign}}</td>
+              <td><a href="/moj/about-membership">Change</a></td>
+          </tr>
+          <tr>
+              <td>Membership Reference Number</td>
+              <td>{{DRN}}</td>
+              <td><a href="/moj/about-membership">Change</a></td>
+          </tr>
+          <tr>
+              <td  style="vertical-align:top">Name and Address</td>
+              <td  style="vertical-align:top">{{fullname}}<br/>
+                  {{address1}}<br/>
+                  {{address2}}<br/>
+                  {{address3}}<br/>
+                  {{address4}}<br/>
+                  {{postcode}}
+              </td>
+              <td  style="vertical-align:top"><a href="/moj/about-you">Change</a></td>
+          </tr>
+          <tr>
+              <td>Phone number</td>
+              <td>{{phone}}</td>
+              <td><a href="/moj/about-you-continue">Change</a></td>
+          </tr>
+          <tr>
+              <td>Delivery date</td>
+              <td>{{dobDay}} {{dobMonth}} {{dobYear}}</td>
+              <td><a href="/moj/about-you-continue">Change</a></td>
+          </tr>
+          <tr>
+              <td>Credit card number</td>
+              <td>{{nino}}</td>
+              <td><a href="/moj/about-you-continue">Change</a></td>
+          </tr>
+          <tr>
+              <td>Laser Sword</td>
+              <td>£{{item1TotalDue}}</td>
+              <td><a href="/moj/cart-summary">Change</a></td>
+          </tr>
+          <tr>
+              <td>R2D2</td>
+              <td>£{{item2TotalDue}}</td>
+              <td><a href="/moj/cart-summary">Change</a></td>
+          </tr>
+          <tr>
+              <td>Total amount</td>
+              <td>£{{grandTotalDue}}</td>
+              <td/>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="form-group">
+        <button class ="btn button" type "next">Submit</button>
+    </div>
+  </form>
+</main>
+
+{{/content}}
+
+{{/layout}}
